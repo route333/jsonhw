@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Система управління студентами</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="btn">Додати студента</button>
+    <ul id="studentsList"></ul>
+
+    <div id="modal" class="modal">
+      <div class="modal-decoration">
+        <button class="close">закрити</button>
+        <form id="studentForm">
+          <label for="name">Ім'я:</label>
+          <input type="text" placeholder="name" id="name" />
+
+          <label for="surname">Прізвище:</label>
+          <input type="text" placeholder="surname" id="surname" />
+
+          <label for="age">Вік:</label>
+          <input type="number" placeholder="age" id="age" />
+
+          <label for="course">Курс:</label>
+          <input type="text" placeholder="course" id="course" />
+
+          <label for="faculty">Факультет:</label>
+          <input type="text" placeholder="faculty" id="faculty" />
+
+          <label for="courses">Список курсів:</label>
+          <input type="text" placeholder="courses" id="courses" />
+
+          <button type="button" class="save">Зберегти</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
