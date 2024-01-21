@@ -40,9 +40,11 @@ function saveStudent() {
     faculty,
     courses,
   };
-  const jsonData = JSON.stringify(studentsData);
-  saveDataToFile(jsonData);
+  studentsData.push(newStudent);
 
+  const jsonData = JSON.stringify(studentsData);
+ 
+  updateStudentsList();
   closeModal();
 }
 
